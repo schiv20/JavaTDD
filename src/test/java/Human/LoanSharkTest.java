@@ -15,10 +15,16 @@ class LoanSharkTest {
 
     @Test
     void love() {
-        int oldInterestRate = loanShark.getInterestRate();
+        double oldInterestRate = loanShark.getInterestRate();
         loanShark.love();
-        int newInterestRate = loanShark.getInterestRate();
+        double newInterestRate = loanShark.getInterestRate();
         assertEquals(oldInterestRate, newInterestRate);
 
+    }
+
+    @Test
+    void testCalculateYield() {
+        double yield = loanShark.calculateYield(100.00, 10);
+        assertEquals(5904900, yield);
     }
 }
