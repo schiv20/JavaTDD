@@ -1,21 +1,19 @@
 package Human;
 
-import Interfaces.ILovable;
-
-public class LoanShark extends Human implements ILovable {
+public class LoanShark extends Human {
     private int interestRate;
 
     public int getInterestRate() {
         return interestRate;
     }
 
-    public LoanShark(String name, int age, String occupation) {
+    public LoanShark(String name, int age) {
         super(name, age);
         setOccupation("Loan Shark ");
         this.interestRate = 200;
     }
 
     public void Love(){
-        System.out.println("Interest rate decreases too " + this.interestRate);
+        System.out.println("Interest rate decreases to " + this.interestRate);
     }
 }

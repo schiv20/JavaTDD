@@ -2,7 +2,7 @@ package Human;
 
 import Interfaces.ILovable;
 
-public class Baby extends Human implements ILovable {
+public class Baby extends Human  {
     double cuteness;
 
     public double getCuteness() {

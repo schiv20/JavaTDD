@@ -22,7 +22,7 @@ public class Casino extends Building {
 
     @Override
     public void Love() {
-        setJackpot(getJackpot()*1.1f);
+        setJackpot(getJackpot()+1);
         System.out.println("The NEW jackpot is " + getJackpot() + "! WOW!!!");
     }
 

@@ -1,6 +1,8 @@
 package Human;
 
-public class Human {
+import Interfaces.*;
+
+public class Human implements ILovable {
     private String name;
     private int age;
     private String occupation;
@@ -35,5 +37,10 @@ public class Human {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @Override
+    public void Love() {
+        throw new NoContextForLoveException("There is no context to show this person any love");
     }
 }
