@@ -9,7 +9,7 @@ public class Footballer extends Human  {
         setOccupation("Footballer");
     }
 
-    public void Love(){
+    public void love(){
         System.out.println("Footballer does not care");
     }
 

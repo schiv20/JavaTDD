@@ -56,7 +56,7 @@ class HumanTest {
 
     @Test
     void love() {
-        assertThrows(NoContextForLoveException.class, () -> human.Love());
+        assertThrows(NoContextForLoveException.class, () -> human.love());
     }
 
 

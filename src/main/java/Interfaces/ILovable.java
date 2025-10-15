@@ -2,6 +2,6 @@ package Interfaces;
 
 public interface ILovable {
 
-    void Love();
+    void love();
 
 }

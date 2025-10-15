@@ -13,7 +13,7 @@ public class LoanShark extends Human {
         this.interestRate = 200;
     }
 
-    public void Love(){
+    public void love(){
         System.out.println("Interest rate decreases to " + this.interestRate);
     }
 }

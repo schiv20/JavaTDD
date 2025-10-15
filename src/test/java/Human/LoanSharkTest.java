@@ -16,7 +16,7 @@ class LoanSharkTest {
     @Test
     void love() {
         int oldInterestRate = loanShark.getInterestRate();
-        loanShark.Love();
+        loanShark.love();
         int newInterestRate = loanShark.getInterestRate();
         assertEquals(oldInterestRate, newInterestRate);
 

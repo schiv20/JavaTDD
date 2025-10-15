@@ -15,7 +15,7 @@ public class Baby extends Human  {
         setOccupation("Unemployed");
     }
 
-    public void Love(){
+    public void love(){
         System.out.println("Baby feels cuter");
         cuteness += 1.5;
         System.out.println("Cuteness: " + cuteness);

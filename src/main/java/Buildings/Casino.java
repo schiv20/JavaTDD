@@ -21,7 +21,7 @@ public class Casino extends Building {
     }
 
     @Override
-    public void Love() {
+    public void love() {
         setJackpot(getJackpot()+1);
         System.out.println("The NEW jackpot is " + getJackpot() + "! WOW!!!");
     }

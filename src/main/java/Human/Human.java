@@ -8,7 +8,7 @@ public class Human implements ILovable {
     private String occupation;
 
 
-    public Human(String name, int age) {
+    public Human(String name, int age)  {
         setName(name);
         setAge(age);
     }
@@ -45,7 +45,7 @@ public class Human implements ILovable {
     }
 
     @Override
-    public void Love() {
+    public void love() throws NoContextForLoveException {
         throw new NoContextForLoveException("There is no context to show this person any love");
     }
 }
