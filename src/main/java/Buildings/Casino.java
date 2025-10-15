@@ -4,13 +4,13 @@ import Interfaces.ILovable;
 
 public class Casino extends Building {
 
-//    @Override
-//    public String toString() {
-//        return "Casino | SQFT: %d | FLOORS: %n | JACKPOT: %n;
-//    }
+    @Override
+    public String toString() {
+        return String.format("%s | SQFT: %.2f | FLOORS: %d | JACKPOT: %.2f", getName(), getSqft(), getNumOfFloors(), getJackpot());
+    }
 
-    public Casino(float sqft, int numOfFloors, float jackpot) {
-        super(sqft, numOfFloors);
+    public Casino(String name, float sqft, int numOfFloors, float jackpot) {
+        super(name, sqft, numOfFloors);
         setJackpot(jackpot);
 
     }

@@ -6,7 +6,8 @@ public abstract class Building implements ILovable {
 
     public abstract void enterBuilding();
 
-    public Building(float sqft, int numOfFloors) {
+    public Building(String name, float sqft, int numOfFloors) {
+        setName(name);
         setSqft(sqft);
         setNumOfFloors(numOfFloors);
     }
@@ -27,6 +28,15 @@ public abstract class Building implements ILovable {
         this.sqft = sqft;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    private String name;
     private int numOfFloors;
     private float sqft;
 
