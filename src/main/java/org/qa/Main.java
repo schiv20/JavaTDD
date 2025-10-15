@@ -1,9 +1,10 @@
 package org.qa;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import Buildings.Casino;
+
 public class Main {
     public static void main(String[] args) {
 
+        Casino casino = new Casino(100, 30, 1000000);
     }
 }
