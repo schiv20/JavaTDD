@@ -9,8 +9,13 @@ public class Human implements ILovable {
 
 
     public Human(String name, int age) {
-        this.name = name;
-        this.age = age;
+        setName(name);
+        setAge(age);
+    }
+
+    public Human(String name, int age, String occupation) {
+        this(name, age);
+        setOccupation(occupation);
     }
 
 

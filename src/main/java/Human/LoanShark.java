@@ -9,7 +9,7 @@ public class LoanShark extends Human {
 
     public LoanShark(String name, int age) {
         super(name, age);
-        setOccupation("Loan Shark ");
+        setOccupation("Loan Shark");
         this.interestRate = 200;
     }
 

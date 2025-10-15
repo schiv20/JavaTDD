@@ -1,17 +1,19 @@
 package Human;
 
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class LoanSharkTest {
 
     LoanShark loanShark = new LoanShark("Beer Bryan", 40);
 
-    @org.junit.jupiter.api.Test
+    @Test
     void getInterestRate() {
         assertEquals(200, loanShark.getInterestRate());
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void love() {
         int oldInterestRate = loanShark.getInterestRate();
         loanShark.Love();

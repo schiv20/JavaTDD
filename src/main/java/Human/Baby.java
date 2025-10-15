@@ -9,7 +9,7 @@ public class Baby extends Human  {
         return cuteness;
     }
 
-    public Baby(String name, int age, double cuteness) {
+    public Baby(String name, int age, String occupation, double cuteness) {
         super(name, age);
         this.cuteness = cuteness;
         setOccupation("Unemployed");
