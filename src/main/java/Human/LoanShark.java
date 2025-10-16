@@ -3,6 +3,10 @@ package Human;
 public class LoanShark extends Human {
     private double interestRate;
 
+    public void setInterestRate(double interestRate) {
+        this.interestRate = interestRate;
+    }
+
     public double getInterestRate() {
         return interestRate;
     }

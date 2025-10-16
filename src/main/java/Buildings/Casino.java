@@ -53,16 +53,23 @@ public class Casino extends Building {
         this.jackpot = jackpot;
     }
 
-    public float gamble(float bet){
+    public float gamble(float bet) {
+        if (bet <= 0) {
+            return 0f; // Invalid bet
+        }
 
         float chanceToWin = (bet == jackpot) ? 0.5f : bet / jackpot;
+
+        chanceToWin = Math.min(chanceToWin, 1.0f); // Cap at 100%
+
         float roll = random.nextFloat(); // Random float between 0.0 and 1.0
+
         if (roll < chanceToWin) {
-            float prize = bet * (1/chanceToWin);
-            prize*=CASINO_TAX; //CASINO TAX
-            return prize; // Win: double the bet
+            float payoutMultiplier = 1 / chanceToWin;
+            float prize = bet * payoutMultiplier * CASINO_TAX;
+            return prize;
         } else {
-            return 0f; // Lose
+            return 0f;
         }
     }
 

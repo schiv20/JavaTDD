@@ -4,8 +4,8 @@ import Interfaces.ILovable;
 
 public class Footballer extends Human  {
 
-    public Footballer(String name, int age, String occupation) {
-        super(name, age, occupation);
+    public Footballer(String name, int age) {
+        super(name, age);
         setOccupation("Footballer");
     }
 
