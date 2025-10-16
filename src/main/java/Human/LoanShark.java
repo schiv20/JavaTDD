@@ -17,6 +17,12 @@ public class LoanShark extends Human {
         this.interestRate = 200;
     }
 
+    public LoanShark(String name, int age, double interestRate) {
+        super(name, age);
+        setOccupation("Loan Shark");
+        setInterestRate(interestRate);
+    }
+
     public void love(){
         System.out.println("Interest rate decreases to " + this.interestRate);
     }
